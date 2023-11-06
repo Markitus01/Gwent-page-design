@@ -1,0 +1,409 @@
+@font-face {
+  font-family: Menutxt;
+  src: url("fonts/hinted-HalisGR-Bold.woff2");
+}
+@font-face {
+  font-family: Descrtxt;
+  src: url(fonts/hinted-HalisGR-Book.woff2);
+}
+@font-face {
+  font-family: Gwent;
+  src: url(fonts/hinted-GWENT-ExtraBold.woff2);
+}
+html {
+  background-image: url("img/large_back.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: top;
+  background-size: contain;
+  background-color: #0b0c0e;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+html header > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Menutxt;
+  font-variant: small-caps;
+  text-shadow: 0 0 5px red;
+  font-size: 1.5em;
+  background-image: url("img/menu_bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+html header > ul > li:first-of-type {
+  content: "";
+  width: 7vw;
+  height: 7vw;
+  background-image: url(img/blacksun_logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 5%;
+  margin-right: -5%;
+}
+html header > ul > li:last-of-type {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+html header > section:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 73%;
+}
+html header > section:first-of-type h1 {
+  background-image: url(img/silver-button.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-transform: uppercase;
+  font-family: Menutxt;
+  text-shadow: 0 0 5px red;
+  font-size: 20px;
+  padding: 6%;
+  padding-left: 24%;
+  padding-right: 24%;
+  text-align: center;
+}
+html header > section:first-of-type p {
+  color: white;
+  font-family: Descrtxt;
+  text-align: center;
+  font-size: 1.25em;
+}
+html header .offers > article {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+}
+html header .offers > article div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html header .offers > article h2 {
+  color: #a5351d;
+  font-family: Gwent;
+  font-size: 64px;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 14%;
+  background-image: url(img/separator.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+html header .offers > article p {
+  color: white;
+  font-family: Descrtxt;
+  text-align: justify;
+  font-size: 22px;
+}
+html header .offers > article p:first-of-type {
+  margin-top: 5%;
+}
+html header .offers > article:first-of-type {
+  margin-right: 5%;
+}
+html header .offers > article:first-of-type > img {
+  margin-top: 4%;
+}
+html header .offers > article:first-of-type > div {
+  margin-left: 2%;
+}
+html header .offers > article:last-of-type > img {
+  order: 2;
+  margin-top: -4%;
+}
+html header .offers > article:last-of-type > div {
+  order: 1;
+  margin-right: 2%;
+}
+html main .collections::before {
+  content: "";
+  position: relative;
+  display: block;
+  height: 5vw;
+  width: 40vw;
+  top: 23.5vw;
+  left: 20vw;
+  background-image: url(img/separator.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+html main .collections > h2 {
+  color: #a5351d;
+  font-family: Gwent;
+  font-size: 64px;
+  text-align: center;
+  margin-top: 10%;
+  width: 100%;
+}
+html main .collections > p {
+  color: white;
+  font-family: Descrtxt;
+  text-align: center;
+  font-size: 22px;
+  margin-top: 5%;
+}
+html main .collections > main {
+  margin-top: 5%;
+  background-image: url(img/frame_gran.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+html main .collections > main > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: white;
+  font-family: Descrtxt;
+  font-size: 22px;
+  text-align: center;
+}
+html main .collections > main > ul .selected {
+  filter: grayscale(100%);
+}
+html main .cards {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: url(img/frame_gran.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+html main .cards img {
+  width: 12vw;
+}
+html main .cards h3 {
+  color: #a5351d;
+  font-family: Gwent;
+  font-size: 22px;
+  margin-bottom: 5%;
+}
+html main .cards h2,
+html main .cards h4,
+html main .cards p,
+html main .cards q {
+  color: white;
+  font-family: Descrtxt;
+}
+html main .cards h2 {
+  font-size: 22px;
+}
+html main .cards h4 {
+  font-size: 20px;
+  padding-bottom: 1vw;
+  border-bottom: solid white 1px;
+  margin-bottom: 1vw;
+}
+html main .cards p {
+  font-size: 16px;
+}
+html main .cards q {
+  font-style: italic;
+  font-size: 12px;
+}
+html main .cards i {
+  color: #e2a73e;
+  font-family: Gwent;
+  font-size: 40px;
+  -webkit-text-stroke: 1.5px black;
+  background-image: url(img/cost.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top;
+}
+html main .cards main > h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+html main .cards main h2,
+html main .cards main p,
+html main .cards main q {
+  line-height: 1.5vw;
+}
+html main .cards figure {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3%;
+  align-items: end;
+}
+html main .cards figure i {
+  position: relative;
+  padding-top: 12%;
+  top: -3.5vw;
+  left: -0.5vw;
+}
+html main .cards figure::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 18vw;
+  width: 12vw;
+  background-image: url(img/frame-basis-gold.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+html main .cards .legendary {
+  display: flex;
+  margin-left: 5%;
+  width: 50%;
+}
+html main .cards .legendary > figure::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2vw;
+  width: 2vw;
+  z-index: 200;
+  left: 13.8vw;
+  background-image: url(img/gem-legendary.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html main .cards .legendary > main {
+  margin-right: 5%;
+}
+html main .cards .legendary > main ul li .gold {
+  display: flex;
+  margin-left: 5%;
+}
+html main .cards .legendary > main ul li .gold:first-of-type {
+  margin-top: 10%;
+}
+html main .cards .legendary > main ul li .gold figure::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 12vw;
+  width: 7.98vw;
+  background-image: url(img/frame-basis-gold.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+html main .cards .legendary > main ul li .gold figure::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 1vw;
+  width: 1vw;
+  z-index: 200;
+  left: 28.1vw;
+  background-image: url(img/gem-legendary.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html main .cards .legendary > main ul li .gold .n1 img {
+  width: 8vw;
+}
+html main .cards .legendary > main ul li .gold .fire img {
+  width: 8vw;
+}
+html main .cards .epic {
+  display: flex;
+  width: 40%;
+}
+html main .cards .epic > figure::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2vw;
+  width: 2vw;
+  z-index: 200;
+  right: 43.5vw;
+  background-image: url(img/gem-epic.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html main .cards .rare {
+  display: flex;
+  width: 50%;
+  margin-left: 5%;
+}
+html main .cards .rare > main {
+  margin-right: 5%;
+}
+html main .cards .rare > figure::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2vw;
+  width: 2vw;
+  z-index: 200;
+  left: 13.8vw;
+  background-image: url(img/gem-rare.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html main .cards .common {
+  display: flex;
+  width: 40%;
+}
+html main .cards .common > figure::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2vw;
+  width: 2vw;
+  z-index: 200;
+  right: 43.5vw;
+  background-image: url(img/gem-common.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html main .cards .common .n4 b {
+  display: none;
+}
+html footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vw;
+}
+html footer > img {
+  width: 15vw;
+}
+html footer > p {
+  background-image: url(img/silver-button.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-transform: uppercase;
+  font-family: Menutxt;
+  text-shadow: 0 0 5px red;
+  font-size: 1vw;
+  padding: 5vw;
+  text-align: center;
+}
+html footer div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+html footer div > p {
+  font-family: Descrtxt;
+  color: white;
+  font-size: 1vw;
+}
+html footer div ul {
+  display: flex;
+  flex-direction: row;
+}
+html footer div ul li {
+  padding: 1vw;
+}
+html footer div img {
+  width: 10vw;
+}
