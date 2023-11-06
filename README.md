@@ -1,0 +1,1 @@
+The thing with this project was to do all the design without touching the code inside the given html
